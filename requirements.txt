@@ -1,0 +1,6 @@
+telethon
+python-binance
+pandas
+requests
+ta
+flask

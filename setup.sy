@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "ساخت محیط مجازی..."
+python3 -m venv venv
+
+echo "فعال‌سازی محیط مجازی..."
+source venv/bin/activate
+
+echo "بروزرسانی pip..."
+pip install --upgrade pip
+
+echo "نصب پکیج‌ها از requirements.txt..."
+pip install -r requirements.txt
+
+echo "نصب کامل شد."
+echo "برای اجرای ربات، این دستور رو وارد کن:"
+echo "source venv/bin/activate && python main_bot.py"
